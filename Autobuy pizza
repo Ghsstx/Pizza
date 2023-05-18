@@ -1,0 +1,11 @@
+local Hum = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+                                                local PlayerPosition = { Hum.CFrame:GetComponents() } -- gets your current pos (oldPosition)
+
+                                                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").Ignored.Shop["[Pizza] - $5"]:FindFirstChildOfClass("Part").Position)
+
+                                                    wait(0.3)
+
+                                                    fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Pizza] - $5"].ClickDetector)
+
+                                                Hum.CFrame = CFrame.new(unpack(PlayerPosition)) -- teleports you to oldPosition
